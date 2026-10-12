@@ -1,0 +1,90 @@
+﻿/* src/styles.css */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb; /* light off‑white */
+  color: #212529;
+}
+
+nav {
+  background: #2c3e50; /* dark blue */
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #ffcc00; /* accent gold */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th, .table td {
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  text-align: left;
+}
+.table th {
+  background: #e9ecef;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+button {
+  background: #6c5ce7; /* purple */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #5a4bcf;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
